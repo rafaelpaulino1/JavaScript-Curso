@@ -1,9 +1,130 @@
 VARIÁVEIS
 
-Variáveis são usadas para armazenar dados em javaScript
+Variáveis são usadas para armazenar dados em JavaScript.
 
     Sintaxe: let/const storage_name = value;
 
 ATRIBUIÇÕES DE VALOR
 
-    
+    Em JavaScript os valores são atribuidos pelo sinal de "=", a esqueda fica a variável e a 
+    direita fica o valor que será atribuído.
+
+    Há formas de variáveis onde seu valor não é fixo, como no caso do "let", basta atribuir um
+    novo valor que ele automaticamente será trocado.
+
+    Se uma variável for atribuída a outra variável, a variável a esquerda receberá o valor que
+    está na variável a direita.
+        
+        Ex: let fruta = "manga"
+            console.log(fruta)
+            Resultado: manga
+
+            let fruta = "manga"
+            let fruta = "kiwi"
+            console.log(fruta)
+            Resultado: kiwi
+
+            let vegetal = "cenoura"
+            let fruta = vegetal
+            console.log(fruta)
+            Resultado: cenoura 
+
+CONVENÇÕESD DE NOMENCLATURA
+
+    O nome da variável deve conter digítos(0-9) ou letras;
+    O nome da variável pode conter $ ou _;
+    O primeiro caracter não pode ser um digíto;
+    Não pode ser uma palavra-chave reservada;
+
+        Ex: let $ = 'dollar'; correto
+            let 4manha; errado
+            let _ = 'underscore'; correto
+            let react-play; errado
+
+    O nome das variáveis diferencia letras maiúsculas e minúsculas.
+
+        Ex: let meuNome = "Rafael";
+            let MeuNome = "Felipe";
+
+    Padrões que devem ser seguidos para nomes de variáveis:
+
+        camelCase;
+        Nome legível para humanos;
+        O nome deve estar realacionado a um motivo/causa.
+
+LET/VAR/CONST
+
+    var - escopo de função, pode ser redeclarado (não recomendado).
+
+        O comportamento dele pode causar confusão porque ele ignora alguns blocos {}.
+
+        Ex:
+
+        if (true) {
+            var idade = 25;
+        }
+        console.log(idade);
+        Resultado:25        
+
+        Mesmo criado dentro do if, ele apareceu fora.
+        Isso pode gerar bugs grandes.
+
+    let - escopo de bloco, pode ser reatribuído.
+
+        O let foi criado para corrigir problemas do var.
+        o let só existe dentro do bloco {}.
+        Isso deixa o código mais seguro e organizado.
+
+        Ex:
+        if (true) {
+            let nome = "Rafael";
+        }
+        console.log(nome);
+        Resultado: Erro
+
+    const - escopo de bloco, **não pode** ser reatribuído.
+
+        Usado quando o valor não deve mudar.
+        
+        Ex:
+        const pi = 3.14;
+        pi = 5;
+        Resultado:Erro
+
+PRIMITIVOS E NÃO PRIMITIVOS
+
+    Tipos de dados primitivos:
+
+        String - tipos textuais ('Olá')
+        Number - tipos numéricos ('25', '3,14')
+        Boolean - verdadeiro/falso ('true', 'false')
+        Undefined - uma variável declarada, mas não definida ('let x;')
+        Null - representa 'nulo' ou 'nada' ('let y = null;')
+        BigInt - números grandes ('BigInt(1324567981234567890)')
+        Symbol - identificadores únicos ('Symbol("id")')
+
+    Tipos de dados não primitivos
+
+        Obeject - coleção de pares chave-valor.
+        Array - lista de valores ordenados.
+        Function - um código que pode ser executado.
+
+VARIÁVEIS NA MEMÓRIA
+
+    Stack - como são armazenados os dados primitivos.
+
+        Os dados são armazenados em forma de pilha. O último que entra é o primeiro que sai.
+
+    Heap - como são armazenados os dados não primitivos.
+
+        Como se os dados fossem armazenados em bolhas. Precisa de um "endereço" para acessar.
+
+COMO O JAVASCRIPT VÊ O CÓDIGO
+
+    O JS separa o código em 3 fases: Tokenizing, Parsing e Interpreting.
+
+    Tokenizing - divide o código em pares e verifica se os termos estão corretos.
+
+    Parsing - estrutura o código em forma de árvorae faz uma análise sintática. Forma abstrata.
+
+    Interpreting - Geração do código pela máquina.
