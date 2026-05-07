@@ -1,0 +1,9 @@
+VARIÁVEIS
+
+Variáveis são usadas para armazenar dados em javaScript
+
+    Sintaxe: let/const storage_name = value;
+
+ATRIBUIÇÕES DE VALOR
+
+    
