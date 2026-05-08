@@ -1,0 +1,144 @@
+OPERADORES E EXPRESSÕES
+
+OPERADORES, OPERANDOS E EXPRESSÕES
+
+    OPERADORES -> são os símbolos que são aplicadps para realizar um cálculo.
+        
+        Ex: + - * /
+    
+    OPERANDOS -> são os valores que serão utilizados para realizar um cálculo.
+       
+        Ex: x+y, "x" e "y" são os operandos.
+
+    EXPRESSÕES -> algo (pode ser um pedaço de código) que resulta em um valor.
+    Existem dois tipos de expressão:
+    
+        Expressão de atribuição: atribuição de valor a algo.
+
+        Expressão de avaliação: uso dos operandos e dos operadores para obter um outro valor.
+
+        Ex: x = 2
+            3 + 4 = 7
+        
+DIFERENTES TIPOS DE OPERADORES
+
+    Aritmético, Atribuição, Comparação, Relacional, Lógico, Bitwise(Bit a Bit), Condicional.
+
+
+OPERADORES ARITMÉTICOS
+
+    Os operadores aritméticos recebem os os valores numéricos (operandos) para gerar um novo valor
+    com os diferentes tipos de de operadores aritméticos. (+ - * /)
+
+        Ex: x+y=z
+            x-y=z
+            y-x=z
+            x*y=z
+            x/y=z
+            y/x=z
+
+    Caso uma String seja colocada no lugar de um valor numérico e operador "+" seja colocado o JS 
+    fará uma concatenação.
+        Deve ser evitado.
+
+    ** -> ponteciação (x²)
+
+    % -> resto/sobra de uma divisão (5 & 2 = '1')
+    
+    ++ -> adicona mais 1 ao operando. Sua posição influencia em quando será feita essa operação. 
+    Se colocado a posteriore o valor sera adicionado após a operação. Se colocado antes será adcionado 
+    na mesma operação.
+
+        Ex: x = x + 1
+    -- -> subtrai em 1 o operando. Sua posição influencia em quando será feita essa operação. Se 
+    colocado a posteriore o valor sera diminuido após a operação. Se colocado antes será adcdiminuido 
+    na mesma operação.
+
+        Ex: x = x - 1
+
+OPERADORES DE ATRIBUIÇÃO
+
+    Os operadores de atribuição servem para atribuir valores a variáveis, podendo também modificar um 
+    valor atual de forma mais curta.
+
+        = -> atribui valor
+
+        Ex: x = 10
+
+    Operadores de Atribuição Combinados:
+
+        += -> somar e atribuir
+
+        -= -> subtrair e atribuir
+
+        *= -> multiplicar e atribuir
+        
+        /= -> dividir e atribuir
+
+        %= -> resto da divisão
+
+            Ex: x = 10
+                x += 5 -> x = x + 5
+                x = 15
+
+OPERADORES DE COMPARAÇÃO
+
+    Operadores de comparação servem para comparar valores de diferentes formas: verificar
+    se são diferentes, verificar se são iguais, verificar se um valor é maior ou menor do
+    que outro, entre outros.
+
+    Vão retornar valores booleanos (verdadeiro ou falso).
+       
+    Existem dois operadores de igualdade e dois operadores de diferença.
+
+        == -> Igualdade Flexível (EVITAR USAR)
+
+            Quando se compara valores com atributos diferentes, em JS, os valores serão aproximados
+            para o atributo mais próximo possível.
+                
+    
+                Ex: 0 == false -> false
+
+                    3 == '3' -> true
+
+                    undefined == null -> true
+
+        === -> Igualdade Estrita
+
+            Diferentemente da Flexível a igualdade estrita compara os valores e os atributos/tipos
+            
+                Ex: 3 === '3' -> false
+                    undefined === null -> false
+
+        NaN = not a number
+
+        No caso de objetos, o retorno sempre será falso, mesmo que os valores dentro
+        do mesmo sejam iguais, pois seu endereços dentro da memória estão em locais 
+        diferentes.
+
+            Ex: let obj1= {'nome': 'Rafael'}
+                let obj2= {'nome': 'Rafael'}
+
+                console.log(obj1===obj2) -> false
+
+    Operadores de diferença verifica se os valores se diferem um do outro.
+
+    Também existem dois tipos de operadores de diferença:
+
+        != -> Diferença Flexível
+
+        !== -> Diferença Estrita
+
+        Vão funcionar de forma semelhante aos operadores de igualdade, sendo assim, o estrito
+        leva em consideração o tipo/atributo e o flexível não.
+
+    Outos operadores de comparação:
+
+        '>' -> maior que
+
+        '<' -> menor que
+
+        '>=' -> maior ou igual
+
+        '<=' -> menor ou igual
+             
