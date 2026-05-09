@@ -142,3 +142,170 @@ OPERADORES DE COMPARAÇÃO
 
         '<=' -> menor ou igual
              
+OPERADORES LÓGICOS
+
+    São operadores que combinam condições utilizando valores booleanos, normalmente
+    retornando verdadeiro ou falso.
+
+    Os operadores são:
+
+    && -> "E"
+
+        Ao comparar dois valores ele verifica se os dois são verdadeiros.
+        Só vai retorna verdadeiro se os dois valores avaliados forem verdadeiros
+
+        Tabela do E(&&)
+
+        | A     | B     | Resultado |
+        | ----- | ----- | --------- |
+        | true  | true  | true      |-> somente nesta condição foi retornado true
+        | true  | false | false     |
+        | false | true  | false     |
+        | false | false | false     |
+
+        Caso os valores sejam duas strings ele retornará a o segundo valor
+
+            Ex: vaca && cavalo -> cavalo
+
+
+    || -> "OU"
+
+        Ao comparar dois valores ele verifica se somente um dos valores é verdadeiro.
+        Caso um dos valores for verdadeiro, ele retornará verdadeiro.
+
+        | A     | B     | Resultado |
+        | ----- | ----- | --------- |
+        | true  | true  | true      |
+        | true  | false | true      |
+        | false | true  | true      |
+        | false | false | false     |-> somente nesta condição foi retornado false
+
+        Caso os valores sejam duas strings ele retornará a o primeiro valor
+
+            Ex: vaca && cavalo -> vaca
+
+    ! -> "Negação"
+
+        A negação é utilizada para inverter um valor lógico, logo se um valor é verdadeiro ele se tornará
+        falso, e vice e versa.
+
+            Ex: x=true
+                !x -> x = false
+
+    ?? -> Operador de qualificação de Nullish
+
+        Ele é utilizado para definir um valor padrão somente quando o valor for null ou undefined.
+
+            Ex: let nome = null;
+                console.log(nome ?? "Visitante"); -> 'Visitante'
+
+            Ele retorna o valor da direita porque o outro é nulo.
+
+            Caso os dois valores sejam definidos ele retorna o primeiro.
+
+                let nome = "Rafael";
+                console.log(nome ?? "Visitante"); -> 'Rafael'
+
+OPERADORES CONDICIOANIS
+
+    Operadores condicionais são utilizados para tomar decisões no código. Se comportam como uma forma
+    mais curta de escrever if/else.
+
+    Principais operadores: ? :
+
+        condicao ? 'valorSeTrue' : 'valorSeFalse'
+
+OPERADORES BITWISE (BIT A BIT)
+
+    São operadores utilizados para manipular Bits.
+    Ele vai trabalhar com números binários.
+
+        Ex: 5 = 0101
+            3 = 0011
+
+Principais operadores Bitwise:
+
+    Operadores que comparam Bits
+        & ->	E
+
+            Retorna 1 quando ambos forem 1
+
+            Ex: 5 & 3
+            
+                0101
+                0011
+                ----
+                0001  -> 1
+
+        | ->	OU
+
+            Retorna 1 se pelo meno um bit for 1
+
+            Ex: 5 | 3
+            
+                0101
+                0011
+                ----
+                0111  -> 7
+
+        ^ ->	XOR
+
+            Retorna 1 quando os bits são diferentes
+
+            Ex: 5 ^ 3
+            
+                0101
+                0011
+                ----
+                0110 -> 6
+
+    Operadores que deslocam bits.
+
+        << ->	deslocamento à esquerda
+
+            Desloca bits para esquerda.
+
+            Ex: 5 << 1
+                0101 -> 1010
+                resultado -> 10
+
+        >> -> 	deslocamento à direita
+
+            Desloca bits para direita.
+
+            Ex: 10 >> 1
+            1010 -> 0101
+            resultado -> 5
+
+GROUPPING
+
+    É uma forma de manipular a ordem de prioridade de uma expressão utilizando parênteses().
+
+        Ex: 2 + 3 * 4 = 14
+
+            (2 + 3) * 4 = 20
+
+TYPEOF
+
+    É um operdaor utilizado para descobrir o tipo/atributo de um valor.
+
+        Ex: typeof "Rafael" -> 'String'
+
+    | Valor          | Resultado     |
+    | -------------- | ------------- |
+    | `"Olá"`        | `"string"`    |
+    | `10`           | `"number"`    |
+    | `true`         | `"boolean"`   |
+    | `undefined`    | `"undefined"` |
+    | `{}`           | `"object"`    |
+    | `[]`           | `"object"`    |
+    | `function(){}` | `"function"`  |
+    | `null`         | `"object"`    |
+
+INSTANCEOF
+
+    é um operador que verifica se um objeto foi criado a partir de uma determinada classe 
+    ou função construtora.
+
+        objeto instanceof Classe -> pode retornar true ou false
+        

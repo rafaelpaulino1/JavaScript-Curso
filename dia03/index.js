@@ -69,3 +69,79 @@ console.log(2>=2);
 console.log(4<3);
 console.log(2<7);
 console.log(3<=9);
+
+console.log("--OPERADORES LÓGIOCOS--");
+
+console.log(false && false); 
+console.log(true && false); 
+console.log(true && true); 
+console.log(false && true); 
+
+console.log("Vaca" && "Cavalo");
+
+console.log(4 > 5 && 4 === 6);
+
+console.log(false || false); 
+console.log(true || false); 
+console.log(true || true); 
+console.log(false || true); 
+
+console.log("Vaca" || "Cavalo");
+
+console.log(!false);
+
+console.log(null ?? 1);
+console.log(undefined ?? 3); 
+console.log(false ?? "Rafael");
+console.log(0 ?? "Eduarda");
+
+console.log("--OPERADORES CONDICIONAIS--");
+
+let idade = 23;
+console.log(idade >= 60 ? "Cidadão idoso" : "Não é um cidadão idoso");
+
+console.log("--OPERADORES BIT A BIT--");
+
+//15 & 9 = 9;
+//1111 & 1001 = 1001
+console.log(9 & 15);
+
+//15 | 9 = 15;
+//1111 | 1001 = 1111
+console.log(9 | 15);
+
+//15 ^ 9 = 6;
+//1111 ^ 1001 = 0110
+console.log(9 ^ 15);
+
+//9 << 2 = 36
+//1001 << 2 = 100100
+console.log(9<<2);
+
+//9 >> 2 = 2
+//1001 >> 2 = 0010
+console.log(9>>2);
+
+console.log("--GROUPPING--");
+
+console.log(2 + 3 * 4);
+console.log((2 + 3) * 4);
+
+console.log("--TYPEOF-");
+
+console.log(typeof 'Rafael')
+console.log(typeof 42)
+console.log(typeof true)
+console.log(typeof undefined)
+console.log(typeof null)
+console.log(typeof {})
+console.log(typeof [])
+console.log(typeof function(){})
+
+console.log("--INSTANCEOF-");
+
+const data = new Date();
+console.log(data instanceof Date);
+
+const nome = "Rafael";
+console.log(nome instanceof Array);
