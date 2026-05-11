@@ -1,0 +1,1 @@
+console.log("Dia 04 de JavaScript");
