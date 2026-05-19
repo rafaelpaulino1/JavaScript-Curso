@@ -1,0 +1,115 @@
+FLUXO DE CONTROLE
+
+COMO FUNCIONA O FLUXO DE CONTROLE
+
+    O Fluxo de Controle, por padrão, vai seguir executando linha a linha de cima para baixo no código 
+    escrito, mas há a possibilidade de se pular partes no código e ir direto para a parte desejada, 
+    ou mesmo, ramificar e ter várias possibilidades dentro desse fluxo.
+
+     Os principais comandos utilizados são: 'if', 'if-else', 'switch-case', 'break', 'continue'.
+
+IF-ELSE E RAMIFICAÇÃO
+
+    If-else é um comando condicional, caso uma condição for verdadeira ele executa o bloco que esta dentro
+    das chaves, caso os parâmetros sejam falsos ele executa outra coisa.
+
+        Estrutura:
+
+            if(condição){
+
+                algo a ser executado;
+
+            } else {
+
+                outro algo a ser executado;
+            
+            }
+
+    If-else pode funcionar sem chaves desde que tenha somente uma execução, mas não é o recomendado.
+
+VÁRIOS IF-ELSE
+
+    Há a possibiliade de se colocar vários if e else vinculados para se ter diversas possibilidades.
+
+    Estrutura:
+
+            if(condição){
+           
+                algo a ser executado;
+           
+            } else if (outra condição){
+                
+                outro algo a ser executado;
+            
+            } else if (outra condição){
+                
+                outro algo a ser executado;
+            
+            } else {
+               
+                algo a ser executado caso não atenda as condições impostas;
+            
+            }
+    
+    As condições serão executadas mesmo que não tivessem os elses posicionados no código, mas dessa forma
+    o código passaria por todas as condições mesmo que ja tivesse encontrado a correspondente.
+
+ANINHANDO IF-ELSE
+
+    IFs e ELSEs podem ser colocados dentro de outros IFs e ELSEs, gerando assim, uma cadeia de condições.
+
+    Um else não pode existir sem um if.
+
+    Ex:
+        if(condicao) {
+            
+            console.log("eu sou um if externo");
+            if(condicaoInterna) {
+            
+                console.log("Eu sou um if interno");
+        
+            }else{
+            
+                console.log("eu sou um else interno");
+
+            }
+        } else{
+        
+        console.log("Eu sou um else externo");
+
+        }
+
+SWITCH-CASE
+
+    Caso se tenha muitas condições baseadas em um único valor é mais indicado a se utilizar o switch-case
+
+    Com exceção da ultima posição do switch-case, o break deve ser colocado no final de cada bloco para que 
+    se pule as outras condições que não serão utilizadas.
+
+    Um default deve ser colocado no final do switch-case para caso haja um valor que não corresponde aos 
+    blocos criados.
+
+    Ex:
+        switch (posicao){
+
+            case 1:
+                console.log("Posição 1");
+                break;
+            case 2: 
+                console.log("Posição 2");
+                break;
+            case 3:
+                console.log("Posição 3");
+                break;
+            case 4:
+                console.log("Posição 4");
+                break;
+                
+            default:
+                console.log("Posição não encontrada")
+        }
+
+
+
+    
+    

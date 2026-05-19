@@ -15,12 +15,17 @@ switch (day) {
         console.log("It's a normal day.");
 }
 ```
+    Sairá "It's the start of the week.", pois é valor correspondente a esse bloco no switch-case
 
 ## 2. Construa um Sistema de Saque em Caixa Eletrônico
 Rajan vai até o caixa eletrônico do banco Axis. Ele insere um valor para saque. O caixa eletrônico permite apenas múltiplos de 100. Imprima “Saque realizado com sucesso” se for válido, caso contrário imprima “Valor inválido”.
 
+Feito
+
 ## 3. Construa uma Calculadora com switch-case
 Escreva uma calculadora simples que receba um operador (+, -, *, /, %) como entrada e execute a operação em dois números. Imprima a saída no console.
+
+Feito
 
 ## 4. Pague pelo seu ingresso de cinema
 Imagine que o INOX cobre os preços dos ingressos com base na idade:
@@ -30,8 +35,12 @@ Imagine que o INOX cobre os preços dos ingressos com base na idade:
 
 Escreva um programa que imprima o preço do ingresso com base na idade da pessoa.
 
+Feito
+
 ## 5. Verificador de Signo do Horóscopo
 Escreva um programa que imprima o signo do zodíaco (Áries, Touro, Gêmeos, etc.) com base no mês de nascimento de uma pessoa. Faça baseado no mês, não na data. Por exemplo: nascidos em Março e Abril são de Áries, nascidos em Abril e Maio são de Touro, e assim por diante. Não use if-else.
+
+Feito
 
 ## 6. Qual Triângulo?
 Um triângulo possui 3 lados. O tipo de um triângulo é determinado pelos seus lados:
@@ -40,3 +49,4 @@ Um triângulo possui 3 lados. O tipo de um triângulo é determinado pelos seus 
 - Todos os lados diferentes é chamado de `Triângulo Escaleno`.
 
 Receba os lados de um triângulo como entrada e escreva um programa para determinar o tipo do triângulo. Altere as entradas manualmente a cada vez para verificar se a saída muda corretamente.
+Feito
