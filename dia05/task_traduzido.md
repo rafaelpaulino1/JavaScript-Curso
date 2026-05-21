@@ -51,12 +51,9 @@ feito
 
 ## 6. Escreva seu entendimento sobre as diferenças entre os loops for, while e do-while. Crie seus fluxogramas.
 
-FOR
-    Os loops baseados no for devem ser utilizados quando ja e tem certeza de quantos loops vão ser realizados.
+FOR:    Os loops baseados no for devem ser utilizados quando ja e tem certeza de quantos loops vão ser realizados.
 
-WHILE
-    Os loops baseados no while devem ser utilizados para terminar os loops so quando uma tarefa foi concluida.
+WHILE:    Os loops baseados no while devem ser utilizados para terminar os loops so quando uma tarefa foi concluida.
 
-DO-WHILE
-    Os loops baseados em do-while devem ser utilizados quando se tem a necessidade de ser realizada obrigatoriamente
+DO-WHILE:    Os loops baseados em do-while devem ser utilizados quando se tem a necessidade de ser realizada obrigatoriamente
     uma execução no loop.
