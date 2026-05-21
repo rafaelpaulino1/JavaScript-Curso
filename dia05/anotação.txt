@@ -1,0 +1,56 @@
+LOOPS E ITERAÇÕES
+
+FOR
+    Os loops baseados no for devem ser utilizados quando ja e tem certeza de quantos loops vão ser realizados.
+
+    esqueleto: 
+    for(contador = x;contador = y; contador++){
+        
+        algo que sera executado na quantidade de loops estabelecidos
+    
+    }
+
+    'continue' podem ser utilizados para pular uma volta dentro do loop
+    
+    'break' vai encerrar o for completamente
+
+    FOR ANINHADO
+
+        Pode se fazer um loops dentro de loops
+
+            Ou seja é iniciado um loop se tiver um for dentro desse loop ele executara todos os loops 
+            desse for interno e continuara a execucação dentro do bloco, reiniciando o for externo e 
+            por consequencia o interno novamente ate encerrar o externo.
+
+        for(contador_ext = x;contador_ext = y; contador_ext++){
+        
+            algo que sera executado na quantidade de loops estabelecidos
+            
+            for(contador_int = x;contador_int = y; contador_int++){
+                algo que sera executado na quantidade de loops estabelecidos
+            }
+            
+            algo que sera executado na quantidade de loops estabelecidos
+        }
+
+    Podem ser criados flucos de controle, variáveis, e ser realizado vários calculos dentro dos loops
+
+WHILE
+
+    Os loops baseados no while devem ser utilizados para terminar os loops so quando uma condição for 
+    concluida.
+
+    while(condição) {
+        algo a ser executado
+    }
+
+DO-WHILE
+
+    Os loops baseados em do-while devem ser utilizados quando se tem a necessidade de ser realizada obrigatoriamente
+    uma execução no loop.
+
+    do {
+        algo a ser executado
+    } while (condição)
+
+Melhorar anotação...
