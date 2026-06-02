@@ -1,4 +1,4 @@
-console.log("--AULA 06--")
+console.log("--AULA 06--");
 
 //1
 /*
@@ -104,4 +104,24 @@ function deixarMaiusculo(sentenca){
     return final
 }
 console.log(deixarMaiusculo("a eduarda é maravilhosa"))
+*/
+
+//7
+/*
+(function (str) {
+    console.log("Hello,",str);
+})("JavaScript!")
+*/
+
+//8
+/*
+function greet(name, callback) {
+    callback(name);
+}
+
+function mostrarMensagem(nome) {
+    console.log(`Olá, ${nome}!`);
+}
+
+greet("Rafael", mostrarMensagem);
 */
